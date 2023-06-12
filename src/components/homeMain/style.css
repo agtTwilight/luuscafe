@@ -1,7 +1,22 @@
 .snap-container-horizontal {
+	height: 400px;
+	width: 500px;
+	scroll-snap-type: x mandatory;
+	border: solid red;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	display: flex;
+}
+
+.snap-container-horizontal::-webkit-scrollbar {
+	display: none;
 }
 
 .snap-page-horizontal {
+	flex: none;
+	height: 100%;
+	width: 100%;
+	scroll-snap-align: start;
 }
 
 #home-main {
@@ -11,6 +26,7 @@
 
 #map-location {
 	height: 400px;
+	width: 500px;
 	border: 6px solid var(--highlightyellow);
 	border-radius: 16px;
 	transition: 0.3s ease-in-out;
