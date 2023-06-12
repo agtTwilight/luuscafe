@@ -3,7 +3,7 @@ import './style.css';
 
 export const HomeOptions = () => {
 	return (
-		<section className="snap-page">
+		<section className="snap-page-vertical">
 			<div>World</div>
 		</section>
 	);

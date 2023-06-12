@@ -1,0 +1,15 @@
+#home-main {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#map-location {
+	height: 400px;
+	border: 6px solid var(--highlightyellow);
+	border-radius: 16px;
+	transition: 0.3s ease-in-out;
+}
+
+#map-location:hover {
+	border: 6px solid var(--darkhighlightyellow);
+}

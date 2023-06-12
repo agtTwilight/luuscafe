@@ -6,7 +6,7 @@ import './style.css';
 
 export const Homepage = () => {
 	return (
-		<section className="snap-container">
+		<section className="snap-container-vertical">
 			<HomeMain />
 			<HomeOptions />
 			<Footer />

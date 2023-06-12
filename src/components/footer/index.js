@@ -3,7 +3,7 @@ import './style.css';
 
 export const Footer = () => {
 	return (
-		<footer className="snap-page">
+		<footer className="snap-page-vertical">
 			<section>footer</section>
 		</footer>
 	);

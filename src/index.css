@@ -17,4 +17,8 @@ code {
 	height: 100vh;
 
 	--bgyellow: #fef7dd;
+	--highlightyellow: #ffecd1;
+	--darkhighlightyellow: #f3dfc3;
+	--textred: #e8a39b;
+	--highlightred: #f4918c;
 }
