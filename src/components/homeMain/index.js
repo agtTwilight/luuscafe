@@ -12,8 +12,16 @@ export const HomeMain = () => {
 					alt="a map showing Luu's cafe location in Seattle"
 				></img>
 			</a>
-			<section>
-				<h1>menu</h1>
+			<section className="snap-container-horizontal">
+				<div className="snap-page-horizontal">
+					<h1>Menu</h1>
+				</div>
+				<div className="snap-page-horizontal">
+					<h1>Facebook</h1>
+				</div>
+				<div className="snap-page-horizontal">
+					<h1></h1>
+				</div>
 			</section>
 		</section>
 	);

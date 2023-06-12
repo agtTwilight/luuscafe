@@ -1,3 +1,9 @@
+.snap-container-horizontal {
+}
+
+.snap-page-horizontal {
+}
+
 #home-main {
 	display: flex;
 	justify-content: space-evenly;
