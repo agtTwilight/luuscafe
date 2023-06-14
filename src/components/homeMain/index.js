@@ -17,13 +17,20 @@ export const HomeMain = () => {
 			</a>
 			<section className="snap-container-horizontal">
 				<div className="snap-page-horizontal">
+					<h1>About</h1>
+					<p>Luu's Cafe serves boba, sandwiches, and desserts</p>
+				</div>
+				<div className="snap-page-horizontal">
 					<h1>Menu</h1>
+					<p>Check out our menu here</p>
+				</div>
+				<div className="snap-page-horizontal">
+					<h1>Catering</h1>
+					<p>Schedule catering here</p>
 				</div>
 				<div className="snap-page-horizontal">
 					<h1>Facebook</h1>
-				</div>
-				<div className="snap-page-horizontal">
-					<h1></h1>
+					<p>Keep up with us on Facebook!</p>
 				</div>
 			</section>
 			<div id="home-main-gradient"></div>

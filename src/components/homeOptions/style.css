@@ -1,0 +1,10 @@
+#home-options-gradient {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	background-image: linear-gradient(
+		to right,
+		var(--highlightyellow),
+		var(--highlightpink)
+	);
+}
