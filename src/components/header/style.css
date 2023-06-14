@@ -13,13 +13,12 @@ header {
 
 header a {
 	text-decoration: none;
-	font-weight: bold;
 	color: var(--textred);
+	font-size: 1.25rem;
 	transition: 0.2s ease-in-out;
 }
 
 header a:hover {
-	transform: scale(1.1);
 	color: var(--highlightred);
 }
 

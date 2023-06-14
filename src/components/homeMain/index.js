@@ -5,7 +5,10 @@ import './style.css';
 export const HomeMain = () => {
 	return (
 		<section id="home-main" className="snap-page-vertical">
-			<a href="https://www.google.com/maps/place/Luu%E2%80%99s+Cafe/@47.6809142,-122.3973044,11.92z/data=!4m6!3m5!1s0x5490130da11d2ceb:0x7ae6a98741809a99!8m2!3d47.6903119!4d-122.2911529!16s%2Fg%2F11j0nmq7xy?entry=ttu">
+			<a
+				id="map-a"
+				href="https://www.google.com/maps/place/Luu%E2%80%99s+Cafe/@47.6809142,-122.3973044,11.92z/data=!4m6!3m5!1s0x5490130da11d2ceb:0x7ae6a98741809a99!8m2!3d47.6903119!4d-122.2911529!16s%2Fg%2F11j0nmq7xy?entry=ttu"
+			>
 				<img
 					id="map-location"
 					src={location}
@@ -23,6 +26,14 @@ export const HomeMain = () => {
 					<h1></h1>
 				</div>
 			</section>
+			<div id="home-main-gradient"></div>
+			<svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+				<path
+					fill="#fef7dd"
+					fill-opacity="1"
+					d="M0,64L80,85.3C160,107,320,149,480,149.3C640,149,800,107,960,101.3C1120,96,1280,128,1360,144L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+				></path>
+			</svg>
 		</section>
 	);
 };

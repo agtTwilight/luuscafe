@@ -6,6 +6,7 @@
 	overflow-x: scroll;
 	overflow-y: hidden;
 	display: flex;
+	z-index: 1;
 }
 
 .snap-container-horizontal::-webkit-scrollbar {
@@ -20,8 +21,13 @@
 }
 
 #home-main {
+	position: relative;
 	display: flex;
 	justify-content: space-evenly;
+}
+
+#map-a {
+	z-index: 1;
 }
 
 #map-location {
@@ -34,4 +40,21 @@
 
 #map-location:hover {
 	border: 6px solid var(--darkhighlightyellow);
+}
+
+#svg {
+	position: absolute;
+	top: 50%;
+}
+
+#home-main-gradient {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50%;
+	background-image: linear-gradient(
+		to right,
+		var(--highlightyellow),
+		var(--highlightpink)
+	);
 }
