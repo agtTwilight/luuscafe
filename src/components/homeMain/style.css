@@ -43,7 +43,7 @@
 	border: 6px solid var(--darkhighlightyellow);
 }
 
-#svg {
+#home-svg {
 	position: absolute;
 	top: 50%;
 }
@@ -55,7 +55,7 @@
 	height: 50%;
 	background-image: linear-gradient(
 		to right,
-		var(--highlightyellow),
-		var(--highlightpink)
+		var(--gradientyellow),
+		var(--gradientpink)
 	);
 }

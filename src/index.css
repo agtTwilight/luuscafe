@@ -19,7 +19,17 @@ code {
 	--bgyellow: #fef7dd;
 	--highlightyellow: #ffecd1;
 	--darkhighlightyellow: #f3dfc3;
+	--gradientyellow: #fdf6c3;
+
 	--textred: #e8a39b;
 	--highlightred: #f4918c;
-	--highlightpink: #ffe1e1;
+
+	--gradientpink: #ffe1e1;
+
+	--logoteal: #b3f8ed;
+	--gradientteal: #dcf0fa;
+
+	--logopurple: #8d44d2;
+	--bgpurple: #dbb9f2;
+	--gradientpurple: #edd7fb;
 }

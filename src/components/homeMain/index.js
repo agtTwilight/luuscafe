@@ -34,7 +34,11 @@ export const HomeMain = () => {
 				</div>
 			</section>
 			<div id="home-main-gradient"></div>
-			<svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+			<svg
+				id="home-svg"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 1440 320"
+			>
 				<path
 					fill="#fef7dd"
 					fill-opacity="1"
