@@ -12,6 +12,7 @@ header {
 }
 
 header a {
+	position: relative;
 	text-decoration: none;
 	color: var(--textred);
 	font-size: 1.25rem;
@@ -30,4 +31,22 @@ header img {
 
 header img:hover {
 	transform: rotate(3deg);
+}
+
+@media (min-width: 1000px) {
+	header a::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 0;
+		height: 2px;
+		background-color: var(--highlightred);
+		transition: 0.3s ease-in;
+		border-radius: 16px;
+	}
+
+	header a:hover::before {
+		width: 100%;
+	}
 }
