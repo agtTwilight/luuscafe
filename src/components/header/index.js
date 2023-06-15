@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './assests/logo.png';
 import './style.css';
 
 export const Header = () => {
+	useEffect(() => {
+		document
+			.querySelector('.snap-container-vertical')
+			.addEventListener('scroll', () => {
+				const home = document.querySelector('#home-main');
+				const header = document.querySelector('#header');
+				if (home.getBoundingClientRect().y !== window.scrollY) {
+					header.setAttribute('style', 'opacity: 0;');
+				} else {
+					header.setAttribute('style', 'opacity: 1;');
+				}
+			});
+	}, []);
+
 	return (
-		<header>
+		<header id="header">
 			<a href="">HOMEPAGE</a>
 			<a href="">ABOUT</a>
 			<img src={logo} alt="a boba "></img>
