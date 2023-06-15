@@ -33,7 +33,8 @@
 }
 
 #options-buttons button:hover {
-	background-color: var(--medhighlightyellow);
+	background-color: var(--extradarkhighlightyellow);
+	color: white;
 	border: solid 2px var(--darkhighlightyellow);
 	transform: scale(1.1);
 	cursor: pointer;

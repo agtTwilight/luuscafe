@@ -1,4 +1,5 @@
 import React from 'react';
+import Contact from '../contact';
 import facebook from './assets/facebook.png';
 import './style.css';
 
@@ -30,7 +31,9 @@ export const Footer = () => {
 						></img>
 					</a>
 				</section>
-				<section id="footer-right"></section>
+				<section id="footer-right">
+					<Contact />
+				</section>
 				<hr></hr>
 			</section>
 		</footer>

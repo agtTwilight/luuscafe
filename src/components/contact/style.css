@@ -1,0 +1,61 @@
+#form-ref {
+	width: 50%;
+	text-align: center;
+}
+
+#contact-top h2 {
+	margin: 0;
+}
+
+#contact-top p {
+	margin-top: 0.5rem;
+	margin-bottom: 2rem;
+}
+
+#contact-inputs {
+	display: flex;
+	gap: 1rem;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 0.5rem;
+}
+
+#contact-inputs > *,
+#contact-btn {
+	border: solid 2px var(--mediumgradientpurple);
+	padding: 6px;
+	border-radius: 8px;
+	background-color: var(--lightgradientpurple);
+	resize: none;
+	outline: none;
+
+	color: var(--darkgradientpurple);
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 1rem;
+
+	transition: 0.25s ease-in-out;
+}
+
+#contact-inputs > *::placeholder {
+	color: var(--mediumgradientpurple);
+}
+
+#contact-inputs > *:focus {
+	border: solid 2px var(--darkgradientpurple);
+}
+
+#contact-btn {
+	width: 75px;
+	border-radius: 16px;
+}
+
+#contact-btn:hover {
+	background-color: var(--darkgradientpurple);
+	color: white;
+	transform: scale(1.1);
+	cursor: pointer;
+}

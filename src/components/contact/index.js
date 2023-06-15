@@ -29,31 +29,33 @@ export const Contact = () => {
 
 	const refOne = useRef(null);
 	return (
-		<section id="contact">
-			<section id="form-ref" ref={refOne}>
-				<form id="contactForm" ref={form} onSubmit={sendEmail}>
-					<section id="contactTop">
-						<h2>Send us a message</h2>
-						<p>For general and catering questions</p>
-					</section>
-					<section id="contactInputs">
-						<input
-							id="name"
-							type="text"
-							name="user_name"
-							placeholder="Your Name"
-						/>
-						<input
-							id="email"
-							type="email"
-							name="user_email"
-							placeholder="Your Email"
-						/>
-						<textarea id="message" name="message" placeholder="Your Message" />
-					</section>
-					<input id="contactBtn" type="submit" value="Send" />
-				</form>
-			</section>
+		<section id="form-ref" ref={refOne}>
+			<form id="contact-form" ref={form} onSubmit={sendEmail}>
+				<section id="contact-top">
+					<h2>Send us a message!</h2>
+					<p>(For general and catering use only)</p>
+				</section>
+				<section id="contact-inputs">
+					<input
+						id="input-name"
+						type="text"
+						name="user_name"
+						placeholder="Your Name"
+					/>
+					<input
+						id="input-email"
+						type="email"
+						name="user_email"
+						placeholder="Your Email"
+					/>
+					<textarea
+						id="input-message"
+						name="message"
+						placeholder="Your Message"
+					/>
+				</section>
+				<input id="contact-btn" type="submit" value="Send" />
+			</form>
 		</section>
 	);
 };
