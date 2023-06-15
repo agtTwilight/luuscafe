@@ -1,12 +1,12 @@
 .snap-container-horizontal {
 	height: 400px;
 	width: 500px;
-	scroll-snap-type: x mandatory;
+	scroll-snap-type: inline mandatory;
 	border: solid red;
 	overflow-x: scroll;
+	overscroll-behavior-inline: contain;
 	overflow-y: hidden;
 	display: flex;
-	z-index: 1;
 }
 
 .snap-container-horizontal::-webkit-scrollbar {
@@ -43,6 +43,52 @@
 
 #map-location:hover {
 	border: 6px solid var(--darkhighlightyellow);
+}
+
+#carousel {
+	position: relative;
+	border: solid blue;
+	z-index: 1;
+}
+
+#carousel-left {
+	position: absolute;
+	width: 1rem;
+	height: 2rem;
+	left: -1rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#carousel-right {
+	margin: 0;
+	position: absolute;
+	width: 1rem;
+	height: 2rem;
+	right: -1rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#carousel-nav {
+	display: flex;
+	gap: 1rem;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#carousel-nav button {
+	padding: 5px;
+	border: solid var(--bgpurple) 1px;
+	border-radius: 50%;
+	background-color: var(--bgpurple);
+}
+
+#nav-1 {
+	background-color: var(--darkgradientpurple) !important;
+	border: solid var(--darkgradientpurple) 1px !important;
 }
 
 #home-svg {

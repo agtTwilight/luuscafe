@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import location from './assets/location.png';
 import './style.css';
 
 export const HomeMain = () => {
+	const [slide, setSlide] = useState(1);
+
+	const nextSlide = () => {};
+	const perviousSlide = () => {};
+
 	return (
 		<section id="home-main" className="snap-page-vertical">
 			<a
@@ -15,22 +20,31 @@ export const HomeMain = () => {
 					alt="a map showing Luu's cafe location in Seattle"
 				></img>
 			</a>
-			<section className="snap-container-horizontal">
-				<div className="snap-page-horizontal">
-					<h1>About</h1>
-					<p>Luu's Cafe serves boba, sandwiches, and desserts</p>
-				</div>
-				<div className="snap-page-horizontal">
-					<h1>Menu</h1>
-					<p>Check out our menu here</p>
-				</div>
-				<div className="snap-page-horizontal">
-					<h1>Catering</h1>
-					<p>Schedule catering here</p>
-				</div>
-				<div className="snap-page-horizontal">
-					<h1>Facebook</h1>
-					<p>Keep up with us on Facebook!</p>
+			<section id="carousel">
+				<button id="carousel-left" onClick={nextSlide}></button>
+				<section className="snap-container-horizontal">
+					<div id="carousel-1" className="snap-page-horizontal">
+						<h1>About</h1>
+						<p>Luu's Cafe serves boba, sandwiches, and desserts</p>
+					</div>
+					<div id="carousel-2" className="snap-page-horizontal">
+						<h1>Menu</h1>
+						<p>Check out our menu here</p>
+					</div>
+					<div id="carousel-3" className="snap-page-horizontal">
+						<h1>Catering</h1>
+						<p>Schedule catering here</p>
+					</div>
+					<div className="snap-page-horizontal">
+						<h1>Facebook</h1>
+						<p>Keep up with us on Facebook!</p>
+					</div>
+				</section>
+				<button id="carousel-right" onClick={perviousSlide}></button>
+				<div id="carousel-nav">
+					<button id="nav-1"></button>
+					<button id="nav-2"></button>
+					<button id="nav-3"></button>
 				</div>
 			</section>
 			<div id="home-main-gradient"></div>
