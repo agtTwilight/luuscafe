@@ -38,9 +38,5 @@ h2,
 	width: 100%;
 	height: 20%;
 	bottom: 0;
-	background-image: linear-gradient(
-		to right,
-		var(--gradientteal),
-		var(--gradientpurple)
-	);
+	background-image: linear-gradient(var(--gradientteal), var(--gradientpurple));
 }
