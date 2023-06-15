@@ -3,10 +3,55 @@
 	flex-direction: column;
 }
 
-#home-options h1,
-h2,
-#options-buttons {
+#name,
+#hours,
+#options-buttons,
+#facebook {
 	z-index: 2;
+	padding: 0;
+	margin: 1rem 0;
+}
+
+#name {
+	font-family: myFont;
+	font-size: 3rem;
+	color: var(--textred);
+}
+
+#options-buttons button {
+	margin: 0 1rem;
+	width: 100px;
+	padding: 6px;
+	border-radius: 16px;
+	color: var(--textred);
+	background-color: var(--highlightyellow);
+	border: solid 2px var(--medhighlightyellow);
+	transition: 0.25s ease-in-out;
+}
+
+#options-buttons button:hover {
+	background-color: var(--medhighlightyellow);
+	border: solid 2px var(--darkhighlightyellow);
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+#hours {
+	font-size: 1rem;
+	color: var(--darkhighlightyellow);
+	font-weight: bold;
+	text-align: center;
+}
+
+#facebook {
+	margin: 0;
+	height: 2rem;
+	width: 2rem;
+	transition: 0.25s ease-in-out;
+}
+
+#facebook:hover {
+	transform: scale(1.1);
 }
 
 #options-svg {

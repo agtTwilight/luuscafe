@@ -21,7 +21,8 @@
 }
 
 #home-main {
-	width: 100%;
+	padding-top: 10rem;
+	height: calc(100% - 10rem);
 	position: relative;
 	display: flex;
 	justify-content: space-evenly;

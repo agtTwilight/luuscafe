@@ -1,23 +1,34 @@
 import React from 'react';
+import facebook from './assets/facebook.png';
 import './style.css';
 
 export const HomeOptions = () => {
 	return (
 		<section id="home-options" className="snap-page-vertical">
-			<h1>Luu's Cafe</h1>
+			<h1 id="name">Luu's Cafe</h1>
 			<section id="options-buttons">
-				<a href="">
-					<button>MENU</button>
+				<a
+					href="https://www.doordash.com/store/luu's-cafe-seattle-716170/?pickup=true&utm_campaign=gpa"
+					target="_blank"
+					rel="noreferrer"
+				>
+					<button>Menu</button>
 				</a>
 				<a href="">
-					<button>CATERING</button>
+					<button>Catering</button>
 				</a>
 				<a href="">
-					<button>CONTACT</button>
+					<button>Contact</button>
 				</a>
 			</section>
-			<h2>CATERING STATUS: OPEN</h2>
-			<img id="facebook"></img>
+			<h2 id="hours">Hours: Daily, 11AM-7PM</h2>
+			<a
+				href="https://www.facebook.com/luuscafe/"
+				target="_blank"
+				rel="noreferrer"
+			>
+				<img id="facebook" src={facebook} alt="A facebook logo"></img>
+			</a>
 			<div id="home-options-gradient"></div>
 			<div id="home-options-btm-gradient"></div>
 			<svg

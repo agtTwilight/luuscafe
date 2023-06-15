@@ -1,3 +1,8 @@
+@font-face {
+	font-family: myFont;
+	src: url(passionate.otf);
+}
+
 body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -18,9 +23,11 @@ code {
 
 	--bgyellow: #fef7dd;
 	--highlightyellow: #ffecd1;
-	--darkhighlightyellow: #f3dfc3;
+	--medhighlightyellow: #fae6ca;
+	--darkhighlightyellow: #f8e1c2;
 	--gradientyellow: #fdf6c3;
 
+	--lighthighlightred: #ecaba4;
 	--textred: #e8a39b;
 	--highlightred: #f4918c;
 
