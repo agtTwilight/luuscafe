@@ -1,4 +1,53 @@
 footer {
 	position: relative;
 	background-color: var(--gradientpurple);
+	align-items: center;
+}
+
+#footer {
+	position: relative;
+	color: var(--darkgradientpurple);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 3rem;
+	padding: 2rem;
+	height: 50%;
+	width: calc(100% - 6rem);
+}
+
+#footer-left p {
+	margin-bottom: 2rem;
+	margin-top: 0.5rem;
+}
+
+#footer-left h2 {
+	margin: 0;
+}
+
+#facebook-footer {
+	height: 2rem;
+	width: 2rem;
+	transition: 0.25s ease-in-out;
+}
+
+#facebook-footer:hover {
+	transform: scale(1.1);
+}
+
+#footer-right {
+	display: flex;
+	width: 50%;
+	height: 100%;
+	border: solid red;
+}
+
+#footer hr {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 90%;
+	border: none;
+	border-top: solid 2px var(--darkgradientpurple);
 }
