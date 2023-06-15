@@ -22,13 +22,13 @@ export const HomeOptions = () => {
 				</a>
 			</section>
 			<h2 id="hours">Hours: Daily, 11AM-7PM</h2>
-			<a
+			{/* <a
 				href="https://www.facebook.com/luuscafe/"
 				target="_blank"
 				rel="noreferrer"
 			>
 				<img id="facebook" src={facebook} alt="A facebook logo"></img>
-			</a>
+			</a> */}
 			<div id="home-options-gradient"></div>
 			<div id="home-options-btm-gradient"></div>
 			<svg

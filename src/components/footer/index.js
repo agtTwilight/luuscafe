@@ -18,11 +18,17 @@ export const Footer = () => {
 					</p>
 					<h2>Phone</h2>
 					<p>(206) 946-6778</p>
-					<img
-						id="facebook-footer"
-						src={facebook}
-						alt="the facebook logo"
-					></img>
+					<a
+						href="https://www.facebook.com/luuscafe/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<img
+							id="facebook-footer"
+							src={facebook}
+							alt="the facebook logo"
+						></img>
+					</a>
 				</section>
 				<section id="footer-right"></section>
 				<hr></hr>
