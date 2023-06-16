@@ -2,9 +2,6 @@
 	height: 400px;
 	width: 500px;
 	overflow: hidden;
-	/* scroll-snap-type: inline mandatory;
-	overflow-x: scroll;
-	overscroll-behavior-inline: contain; */
 	display: flex;
 }
 
@@ -23,10 +20,6 @@
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-}
-
-.hide-carousel {
-	display: none;
 }
 
 #home-main {
@@ -50,42 +43,9 @@
 	transition: 0.3s ease-in-out;
 }
 
-#map-location:hover {
-	border: 6px solid var(--darkhighlightyellow);
-}
-
 #carousel {
 	position: relative;
 	z-index: 1;
-}
-
-#carousel-left {
-	position: absolute;
-	width: 2rem;
-	height: 2rem;
-	left: -1rem;
-	top: 50%;
-	transform: translateY(-50%);
-	transition: 0.25s ease-in-out;
-}
-
-#carousel-left:hover {
-	transform: scale(1.1) translateY(-50%);
-}
-
-#carousel-right {
-	margin: 0;
-	position: absolute;
-	width: 2rem;
-	height: 2rem;
-	right: -1rem;
-	top: 50%;
-	transform: translateY(-50%);
-	transition: 0.2s ease-in-out;
-}
-
-#carousel-right:hover {
-	transform: scale(1.1) translateY(-50%);
 }
 
 #carousel-nav {
@@ -103,10 +63,6 @@
 	border-radius: 50%;
 	background-color: var(--bgpurple);
 	transition: 0.5s ease-in-out;
-}
-
-#carousel-nav button:hover {
-	transform: scale(1.1);
 }
 
 .active-nav {
@@ -129,4 +85,55 @@
 		var(--gradientyellow),
 		var(--gradientpink)
 	);
+}
+
+@media (max-width: 999px) {
+	.snap-container-horizontal {
+		scroll-snap-type: inline mandatory;
+		overflow-x: scroll;
+		overscroll-behavior-inline: contain;
+	}
+}
+
+@media (min-width: 1000px) {
+	#map-location:hover {
+		border: 6px solid var(--darkhighlightyellow);
+	}
+
+	.hide-carousel {
+		display: none;
+	}
+
+	#carousel-left {
+		position: absolute;
+		width: 2rem;
+		height: 2rem;
+		left: -1rem;
+		top: 50%;
+		transform: translateY(-50%);
+		transition: 0.25s ease-in-out;
+	}
+
+	#carousel-left:hover {
+		transform: scale(1.1) translateY(-50%);
+	}
+
+	#carousel-right {
+		margin: 0;
+		position: absolute;
+		width: 2rem;
+		height: 2rem;
+		right: -1rem;
+		top: 50%;
+		transform: translateY(-50%);
+		transition: 0.2s ease-in-out;
+	}
+
+	#carousel-right:hover {
+		transform: scale(1.1) translateY(-50%);
+	}
+
+	#carousel-nav button:hover {
+		transform: scale(1.1);
+	}
 }
