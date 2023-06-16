@@ -1,11 +1,10 @@
 .snap-container-horizontal {
 	height: 400px;
 	width: 500px;
-	scroll-snap-type: inline mandatory;
-	border: solid red;
+	overflow: hidden;
+	/* scroll-snap-type: inline mandatory;
 	overflow-x: scroll;
-	overscroll-behavior-inline: contain;
-	overflow-y: hidden;
+	overscroll-behavior-inline: contain; */
 	display: flex;
 }
 
@@ -18,6 +17,16 @@
 	height: 100%;
 	width: 100%;
 	scroll-snap-align: start;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.hide-carousel {
+	display: none;
 }
 
 #home-main {
@@ -47,27 +56,36 @@
 
 #carousel {
 	position: relative;
-	border: solid blue;
 	z-index: 1;
 }
 
 #carousel-left {
 	position: absolute;
-	width: 1rem;
+	width: 2rem;
 	height: 2rem;
 	left: -1rem;
 	top: 50%;
 	transform: translateY(-50%);
+	transition: 0.25s ease-in-out;
+}
+
+#carousel-left:hover {
+	transform: scale(1.1) translateY(-50%);
 }
 
 #carousel-right {
 	margin: 0;
 	position: absolute;
-	width: 1rem;
+	width: 2rem;
 	height: 2rem;
 	right: -1rem;
 	top: 50%;
 	transform: translateY(-50%);
+	transition: 0.2s ease-in-out;
+}
+
+#carousel-right:hover {
+	transform: scale(1.1) translateY(-50%);
 }
 
 #carousel-nav {
@@ -81,14 +99,19 @@
 
 #carousel-nav button {
 	padding: 5px;
-	border: solid var(--bgpurple) 1px;
+	border: solid var(--mediumgradientpurple) 1px;
 	border-radius: 50%;
 	background-color: var(--bgpurple);
+	transition: 0.5s ease-in-out;
 }
 
-#nav-1 {
-	background-color: var(--darkgradientpurple) !important;
-	border: solid var(--darkgradientpurple) 1px !important;
+#carousel-nav button:hover {
+	transform: scale(1.1);
+}
+
+.active-nav {
+	border: solid 1px var(--darkgradientpurple) !important;
+	background-color: var(--mediumgradientpurple) !important;
 }
 
 #home-svg {
