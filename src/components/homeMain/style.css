@@ -93,6 +93,14 @@
 		overflow-x: scroll;
 		overscroll-behavior-inline: contain;
 	}
+
+	#carousel-left {
+		display: none;
+	}
+
+	#carousel-right {
+		display: none;
+	}
 }
 
 @media (min-width: 1000px) {
