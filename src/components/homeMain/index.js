@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import left from './assets/left.png';
 import location from './assets/location.png';
 import right from './assets/right.png';
@@ -6,6 +6,14 @@ import './style.css';
 
 export const HomeMain = () => {
 	const [slide, setSlide] = useState(0);
+
+	// useEffect(() => {
+	// 	const interval = setInterval(() => {
+	// 		nextSlide();
+	// 	}, 3000);
+
+	// 	return () => clearInterval(interval);
+	// }, []);
 
 	const nextSlide = () => {
 		if (slide !== 3) {
