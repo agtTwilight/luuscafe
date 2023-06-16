@@ -86,19 +86,19 @@ export const HomeMain = () => {
 				<section className="snap-container-horizontal">
 					<div id="carousel-1" className="snap-page-horizontal">
 						<h1>About</h1>
-						<p>Luu's Cafe serves boba, sandwiches, and desserts</p>
+						<p>Coming soon!</p>
 					</div>
 					<div id="carousel-2" className="snap-page-horizontal">
 						<h1>Menu</h1>
-						<p>Check out our menu here</p>
+						<p>Coming soon!</p>
 					</div>
 					<div id="carousel-3" className="snap-page-horizontal">
 						<h1>Catering</h1>
-						<p>Schedule catering here</p>
+						<p>Coming soon!</p>
 					</div>
 					<div id="carousel-4" className="snap-page-horizontal">
 						<h1>Facebook</h1>
-						<p>Keep up with us on Facebook!</p>
+						<p>Coming soon!</p>
 					</div>
 				</section>
 				<img
