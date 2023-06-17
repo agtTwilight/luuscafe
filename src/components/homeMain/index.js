@@ -20,9 +20,7 @@ export const HomeMain = () => {
 			const carousel = document.querySelector(
 				'.snap-container-horizontal'
 			).children;
-
 			const nav = document.querySelector('#carousel-nav').children;
-
 			carousel[slide].classList.add('hide-carousel');
 			nav[slide].classList.remove('active-nav');
 			nav[slide + 1].classList.add('active-nav');
@@ -31,7 +29,7 @@ export const HomeMain = () => {
 		}
 	};
 
-	const perviousSlide = () => {
+	const previousSlide = () => {
 		if (slide !== 0) {
 			const carousel = document.querySelector(
 				'.snap-container-horizontal'
@@ -87,7 +85,7 @@ export const HomeMain = () => {
 			<section id="carousel">
 				<img
 					id="carousel-left"
-					onClick={perviousSlide}
+					onClick={previousSlide}
 					src={left}
 					alt="a left arrow"
 				></img>

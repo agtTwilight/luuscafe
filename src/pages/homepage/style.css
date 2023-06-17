@@ -1,10 +1,7 @@
 .snap-container-vertical {
 	position: absolute;
-	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
-	overflow-y: scroll;
 	width: 100%;
-	height: 100%;
 	background-color: var(--bgyellow);
 }
 
@@ -12,10 +9,25 @@
 	scroll-snap-align: start;
 	scroll-snap-stop: always;
 	display: flex;
-	height: 100%;
+	height: 100vh;
 	width: 100%;
 }
 
 .snap-container-vertical::-webkit-scrollbar {
 	display: none;
+}
+
+@media (max-width: 999px) {
+}
+
+@media (min-width: 1000px) {
+	.snap-container-vertical {
+		scroll-snap-type: y mandatory;
+		overflow-y: scroll;
+		height: 100%;
+	}
+
+	.snap-page-vertical {
+		/* height: 100%; */
+	}
 }

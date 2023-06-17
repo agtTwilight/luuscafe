@@ -1,6 +1,4 @@
 .snap-container-horizontal {
-	height: 400px;
-	width: 500px;
 	overflow: hidden;
 	display: flex;
 }
@@ -24,23 +22,12 @@
 
 #home-main {
 	padding-top: 10rem;
-	height: calc(100% - 10rem);
 	position: relative;
 	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
 }
 
 #map-a {
 	z-index: 1;
-}
-
-#map-location {
-	height: 400px;
-	width: 500px;
-	border: 6px solid var(--highlightyellow);
-	border-radius: 16px;
-	transition: 0.3s ease-in-out;
 }
 
 #carousel {
@@ -89,9 +76,35 @@
 
 @media (max-width: 999px) {
 	.snap-container-horizontal {
+		height: 269px;
+		width: 333px;
+		border: solid rebeccapurple 1px;
 		scroll-snap-type: inline mandatory;
 		overflow-x: scroll;
 		overscroll-behavior-inline: contain;
+	}
+
+	#home-main {
+		flex-direction: column-reverse;
+		justify-content: space-evenly;
+		align-items: center;
+		border: solid red 1px;
+		height: calc(180vh - 11rem);
+	}
+
+	#map-a {
+		position: relative;
+		height: 269px;
+		width: 333px;
+		align-self: center;
+	}
+
+	#map-location {
+		height: 257px;
+		width: 321px;
+		border: 6px solid var(--highlightyellow);
+		border-radius: 16px;
+		transition: 0.3s ease-in-out;
 	}
 
 	#carousel-left {
@@ -104,6 +117,25 @@
 }
 
 @media (min-width: 1000px) {
+	.snap-container-horizontal {
+		height: 400px;
+		width: 500px;
+	}
+
+	#home-main {
+		height: calc(100% - 11rem);
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	#map-location {
+		height: 400px;
+		width: 500px;
+		border: 6px solid var(--highlightyellow);
+		border-radius: 16px;
+		transition: 0.3s ease-in-out;
+	}
+
 	#map-location:hover {
 		border: 6px solid var(--darkhighlightyellow);
 	}
