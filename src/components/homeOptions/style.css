@@ -68,7 +68,7 @@
 @media (max-width: 450px) {
 	#options-svg {
 		position: absolute;
-		top: 18%;
+		top: 20%;
 		z-index: 1;
 	}
 }
@@ -102,6 +102,10 @@
 		position: absolute;
 		top: 80%;
 		z-index: 1;
+	}
+
+	#options-buttons button {
+		margin: 0 0.5rem;
 	}
 }
 
