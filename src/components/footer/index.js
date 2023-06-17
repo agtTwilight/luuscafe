@@ -5,7 +5,7 @@ import './style.css';
 
 export const Footer = () => {
 	return (
-		<footer className="snap-page-vertical">
+		<footer id="footer-control" className="snap-page-vertical">
 			<section id="footer">
 				<section id="footer-left">
 					<h2>Address</h2>

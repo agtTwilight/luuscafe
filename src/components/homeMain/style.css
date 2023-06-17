@@ -78,7 +78,6 @@
 	.snap-container-horizontal {
 		height: 269px;
 		width: 333px;
-		border: solid rebeccapurple 1px;
 		scroll-snap-type: inline mandatory;
 		overflow-x: scroll;
 		overscroll-behavior-inline: contain;
@@ -88,7 +87,6 @@
 		flex-direction: column-reverse;
 		justify-content: space-evenly;
 		align-items: center;
-		border: solid red 1px;
 		height: calc(180vh - 11rem);
 	}
 
